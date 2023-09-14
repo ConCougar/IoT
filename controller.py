@@ -34,7 +34,7 @@ time.sleep(1)
 print ("Rotating at intervals of 12 degrees")
 duty = 2
 while duty <= 17:
-servo.ChangeDutyCycle(duty)
+    servo.ChangeDutyCycle(duty)
 time.sleep(1)
 duty = duty + 1
 
@@ -43,6 +43,6 @@ servo.ChangeDutyCycle(2)
 time.sleep(1)
 servo.ChangeDutyCycle(0)
 
-Servo.stop()
+servo.stop()
 GPIO.cleanup()
 print ("Everything's cleaned up")
